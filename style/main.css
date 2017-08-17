@@ -1,0 +1,67 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*----------ACCUEIL------------*/
+
+body{
+    width: 95%;
+    margin:0 auto;
+}
+
+#banner{
+    display: block;
+    margin: 0 auto;
+}
+
+.categorie img{
+    width:50%;
+}
+
+.categorie div{
+    width: 40%;
+    float: right;
+}
+
+#bracelets{
+    display: inline-block;
+}
+
+#bracelets img{
+    float: right;
+}
+
+.text{
+    margin: 50px;
+    text-align: justify;
+    margin-top: 140px;
+}
+
+.text h2{
+    text-align: center;
+    color: darkslategray;
+}
+
+h2,p,a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: lightslategrey;
+}
+
+p,a{
+    font-size: 20px;
+}
+
+.lien{
+    border: 1px solid darkslategray;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 150px
+}
+
+.lien:hover{
+    background: rgba(230,230,250,0.5);
+
+}
