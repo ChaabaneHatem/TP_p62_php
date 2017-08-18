@@ -2,7 +2,7 @@
 
 //les données des produits de notre magasin
 
-$produit = array(
+$produits = array(
         //id => description
     "ED1" => array(
         "nom"           =>  "Monique Lhuillier Baguette",
