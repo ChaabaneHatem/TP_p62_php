@@ -65,7 +65,7 @@ p,a{
     background: rgba(230,230,250,0.5);
 
 }
-/* debut styler le menu */
+/* debut styler le menu nav */
 nav#menu {
     border-bottom: solid 1px grey;
     border-top:solid 1px grey;
@@ -106,4 +106,4 @@ div#info_supplimentaire {
 }
 
 
-/*fin styler menu*/
+/*fin style menu nav*/
