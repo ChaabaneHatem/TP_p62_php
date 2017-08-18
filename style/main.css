@@ -97,13 +97,35 @@ div#logo_panier {
 }
 div#logo_panier img {
     display: inline;
-    width: 40%;
+    width: 25%;
     margin: 10px 0;
 }
+div#logo_panier #panier {
+    display: inline;
+}
+div#logo_panier #panier img {
+    width: 4%;
+}
 div#info_supplimentaire {
+    position: relative;
     height: 50px;
     border-top: solid 1px grey;
 }
 
+div#info_supplimentaire a img {
+    width: 1.4%;
+}
+div#info_supplimentaire img {
+    width: 3%;
+    margin: 0 25px;
+}
+div#info_supplimentaire form {
+    display: inline;
+}
+div#info_supplimentaire div {
+    position: relative;
+    left: 80%;
+    top: -21px;
+}
 
 /*fin styler menu*/
