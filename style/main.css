@@ -65,7 +65,7 @@ p,a{
     background: rgba(230,230,250,0.5);
 
 }
-/* debut styler le menu */
+/* debut styler le menu nav */
 nav#menu {
     border-bottom: solid 1px grey;
     border-top:solid 1px grey;
@@ -165,4 +165,8 @@ div.conteneur_item .img_item img {
 
 
 
+<<<<<<< HEAD
 /*fin page catalogue*/
+=======
+/*fin style menu nav*/
+>>>>>>> c31facc95fdc1d9b042a337872d67b2b7cf2ed5b
