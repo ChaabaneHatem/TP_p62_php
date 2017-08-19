@@ -1,4 +1,5 @@
 <?php
+require_once "function/update_panier.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +24,11 @@
         <div id="logo_panier">
             <img src="images/logo-bijouterie-montreal.png" alt="logo_bijouterie_MTL">
             <div id="panier">
-                <span>0</span>
+                <span><?php
+                    if (array_key_exists("panier", $_SESSION)) {
+                        echo count($panier);
+                    }
+                    ?></span>
                 <a href="panier.php"><img src="images/Logo-Panier.png" alt="logo panier"></a>
                 <div>
                     <span>achat : </span>

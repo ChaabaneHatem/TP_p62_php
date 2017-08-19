@@ -53,9 +53,9 @@ $produits = array(
         "matiere"       =>  "yellow"
     ),
     "WD1" => array(
-        "nom"           =>  "Flat Solitaire",
+        "nom"           =>  "Riviera Pave Sapphire",
         "description"   =>  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, excepturi, veniam. Corporis, eum molestias. Dolor fugiat harum illo itaque, necessitatibus, officiis praesentium quaerat quia repudiandae suscipit ut voluptas voluptates voluptatum?",
-        "image_path"    =>  "Flat_Solitaire_w.jpg",
+        "image_path"    =>  "Riviera_Pave_Sapphire.jpg",
         "prix"          =>  "2000 CAD",
         "categorie"     =>  "women",
         "matiere"       =>  "diamant"
