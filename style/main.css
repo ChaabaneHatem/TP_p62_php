@@ -129,3 +129,13 @@ div#info_supplimentaire div {
 }
 
 /*fin styler menu*/
+
+/*debut page catalogue*/
+div.conteneur_item {
+    border: solid 1px grey;
+}
+
+
+
+
+/*fin page catalogue*/
