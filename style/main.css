@@ -170,10 +170,6 @@ div.conteneur_item .img_item img {
     float: left;
 }
 
-#footer-wrapper{
-    background-color: rgb(248, 249, 249);
-}
-
 .footer-menu{
     width: 33%;
 }
@@ -197,6 +193,10 @@ footer a:hover{
     color: rgb(0, 255, 157);
 }
 
+#wrapper footer {
+    height: 350px;
+    background-color: rgb(248, 249, 249);
+}
 
 <<<<<<< HEAD
 /*fin page catalogue*/

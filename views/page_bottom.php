@@ -1,7 +1,7 @@
 <?php
 ?>
 <footer>
-    <div id="footer-wrapper">
+    <div>
     <div class="footer-menu">
         <ul>
             <li><h2>lien du site</h2></li>
