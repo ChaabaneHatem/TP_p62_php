@@ -66,7 +66,70 @@ p,a{
 }
 
 .lien:hover{
-    background-color: rgba(0, 255, 157, 0.2);
+    background-color: rgba(9, 219, 219,0.2);
+}
+
+/*************PAGE CONTACT*************/
+#titre-contact {
+text-align: center;
+}
+
+#formu{
+    width: 50%;
+    margin:0 auto;
+}
+
+#formu label{
+    display: inline-block;
+}
+
+#formu input{
+    width: 420px;
+    height: 35px;
+
+}
+
+#form input[type='text'],select {
+    margin:20px 0;
+}
+
+#formu label{
+    width: 200px;
+    font-size: 20px;
+}
+
+#formu input[type="radio"] {
+    width: 20px;
+    display: inline-block;
+}
+
+#formu li{
+    margin: 30px 0;
+}
+
+#section-radio label{
+    width: 100px;
+}
+
+input[type="submit"]{
+    background-color: rgba(9, 219, 219,0.2);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 150px;
+    border:1px solid lightgrey;
+    color: darkgrey;
+}
+
+input#bouton-formu{
+    display: block;
+    margin:0 auto;
+    height: 50px;
+}
+
+.error{
+    color:rgb(9, 219, 219)
+;
 }
 /* debut styler le menu nav */
 nav#menu {

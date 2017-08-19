@@ -94,79 +94,82 @@ if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] && $fphone['
 
 ?>
 <main>
-    <h2>Contactez-nous</h2>
-    <form id="formulaire" action="" method="post">
-        <ul>
-            <li>
+    <h2 id="titre-contact">Contactez-nous</h2>
+    <div id="formu">
+        <form id="formulaire" action="" method="post">
+            <ul>
+                <div id="section-radio">
                 <?php foreach($liste_sexe as $radio) {?>
-                    <label for="<?=$radio?>"><?= $radio ?></label>
-                    <input
-                            type="radio"
-                            name="radio_sexe"
-                            id="<?= $radio ?>"
-                            value="<?= $radio ?>"
-                        <?= (array_key_exists('radio_sexe', $_POST)
-                            && ($_POST['radio_sexe'] === $radio)) ? CHECKED_ATTR : '' ?>
-                    />
+                        <input
+                                type="radio"
+                                name="radio_sexe"
+                                id="<?= $radio ?>"
+                                value="<?= $radio ?>"
+                            <?= (array_key_exists('radio_sexe', $_POST)
+                                && ($_POST['radio_sexe'] === $radio)) ? CHECKED_ATTR : '' ?>
+                        />
+                    <label for="<?=$radio?>" id="bouton-radio"><?= $radio ?></label>
                 <?php }?>
+                </div>
                 <?php if ($en_post && ( ! $fradio['is_valid'])) {
-                    echo '<p class="error">' , $fradio['err_msg'] , '</p>';
-                }
-                ?>
-            </li>
-            <li>
-                <label for="saisie_nom">Nom</label>
-                <input type="text" id="saisie_nom" name="saisie_nom"
-                       value="<?= $en_post ? $fnom['val'] : '' ?>"/>
-                <?php if ($en_post && ( ! $fnom['is_valid'])) {
-                    echo '<p class="error">' , $fnom['err_msg'] , '</p>';
-                }
-                ?>
-            </li>
-            <li>
-                <label for="saisie_prenom">Prénom</label>
-                <input type="text" id="saisie_prenom" name="saisie_prenom"
-                       value="<?= $en_post ? $fprenom['val'] : '' ?>"/>
-                <?php if ($en_post && ( ! $fprenom['is_valid'])) {
-                    echo '<p class="error">' , $fprenom['err_msg'] , '</p>';
-                }
-                ?>
-            </li>
-            <li>
-                <label for="saisie_email">Email</label>
-                <input type="text" id="saisie_email" name="saisie_email"
-                       value="<?= $en_post ? $email['val'] : '' ?>">
-                <?php if ($en_post && ( ! $email['is_valid'])) {
-                    echo '<p class="error">' , $email['err_msg'] , '</p>';
-                }
-                ?>
-            </li>
-            <li>
-                <label for="saisie_tel">Telephone</label>
-                <input type="tel" id="saisie_tel" name="saisie_tel"
-                       value="<?= $en_post ? $fphone['val'] : '' ?>">
-                <?php if ($en_post && ( ! $fphone['is_valid'])) {
-                    echo '<p class="error">' , $fphone['err_msg'] , '</p>';
-                }
-                ?>
-            </li>
-            <li>
-                <label for="select_bijoux">Nos choix</label>
-                <select name="select_bijoux" id="select_bijoux">
-                    <option value="-1">Choisissez</option>
-                    <option value="bague">Bague</option>
-                    <option value="Bracelet">Bracelet</option>
-                    <option value="collier">Collier</option>
-                    <option value="boucle">Boucle d'oreille</option>
-                </select>
-            </li>
-            <li>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="80" rows="10"></textarea>
-            </li>
-            <li><input type="submit" value="SOUMETTRE"></li>
-        </ul>
-    </form>
+                        echo '<p class="error">' , $fradio['err_msg'] , '</p>';
+                    }
+                    ?>
+                <li>
+                    <label for="saisie_nom">Nom</label>
+                    <input type="text" id="saisie_nom" name="saisie_nom"
+                           value="<?= $en_post ? $fnom['val'] : '' ?>"/>
+                    <?php if ($en_post && ( ! $fnom['is_valid'])) {
+                        echo '<p class="error">' , $fnom['err_msg'] , '</p>';
+                    }
+                    ?>
+                </li>
+                <li>
+                    <label for="saisie_prenom">Prénom</label>
+                    <input type="text" id="saisie_prenom" name="saisie_prenom"
+                           value="<?= $en_post ? $fprenom['val'] : '' ?>"/>
+                    <?php if ($en_post && ( ! $fprenom['is_valid'])) {
+                        echo '<p class="error">' , $fprenom['err_msg'] , '</p>';
+                    }
+                    ?>
+                </li>
+                <li>
+                    <label for="saisie_email">Email</label>
+                    <input type="text" id="saisie_email" name="saisie_email"
+                           value="<?= $en_post ? $email['val'] : '' ?>">
+                    <?php if ($en_post && ( ! $email['is_valid'])) {
+                        echo '<p class="error">' , $email['err_msg'] , '</p>';
+                    }
+                    ?>
+                </li>
+                <li>
+                    <label for="saisie_tel">Telephone</label>
+                    <input type="tel" id="saisie_tel" name="saisie_tel"
+                           value="<?= $en_post ? $fphone['val'] : '' ?>">
+                    <?php if ($en_post && ( ! $fphone['is_valid'])) {
+                        echo '<p class="error">' , $fphone['err_msg'] , '</p>';
+                    }
+                    ?>
+                </li>
+                <li>
+                    <label for="select_bijoux">Nos choix</label>
+                    <select name="select_bijoux" id="select_bijoux">
+                        <option value="-1">Choisissez</option>
+                        <option value="bague">Bague</option>
+                        <option value="Bracelet">Bracelet</option>
+                        <option value="collier">Collier</option>
+                        <option value="boucle">Boucle d'oreille</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="78" rows="6"></textarea>
+                </li>
+                <li><input id="bouton-formu" type="submit" value="SOUMETTRE"></li>
+            </ul>
+        </form>
+    </div>
+
 </main>
 <?php
 require_once "views/page_bottom.php"
