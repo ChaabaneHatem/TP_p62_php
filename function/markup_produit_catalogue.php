@@ -3,7 +3,7 @@
 function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere) {
     ?>
     <div class="conteneur_item">
-        <div>
+        <div class="img_item">
             <img src="images/<?=$image?>" alt="<?=$name?>">
         </div>
         <span><?=$name?></span>

@@ -135,6 +135,17 @@ div.conteneur_item {
     border: solid 1px grey;
 }
 
+div.conteneur_item .img_item img {
+    width: 20%;
+}
+#coneteneur_global {
+    text-align: center;
+}
+#coneteneur_global div.conteneur_item {
+    display: inline-block;
+    width: 30%;
+}
+
 
 
 
