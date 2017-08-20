@@ -8,8 +8,8 @@ require_once "function/update_panier.php";
     ?>
     <div id="coneteneur_global">
         <?php
-        /*var_dump($_POST);
-        var_dump($panier);*/
+        var_dump($_POST);
+        var_dump($panier);
         require_once "views/produit_catalogue.php";
         ?>
     </div>
