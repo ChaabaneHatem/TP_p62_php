@@ -12,17 +12,7 @@ require_once "data/data.php";
         if (count($panier) == 0) {
             echo "<h2>Votre panier est vide</h2>";
         }
-        $somme_achats = 0;
-        foreach ($panier as $id => $qty) {
-            $mon_produit =& $produits[$id];
-            $name        =& $mon_produit["nom"];
-            $description =& $mon_produit["description"];
-            $image       =& $mon_produit["image_path"];
-            $prix        =& $mon_produit["prix"];
-            $prix_total_par_item = $prix * $qty;
-            generer_un_item_pour_panier($id, $name, $description, $image, $prix_total_par_item, $qty);
-            $somme_achats += $prix_total_par_item;
-        }
+        
         $_SESSION["somme_achat"] = $somme_achats;
         ?>
         <buttom><a href="catalogue.php">Contenue shopping</a></buttom>
