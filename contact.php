@@ -101,7 +101,7 @@ if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] && $fphone['
         <div id="info-contact">
             <div>
                 <img src="images/icone-adresse.gif" alt="icone d'adresse"/>
-                <p>255 boul. Cremaziw E.<br/>Montreal, QC, H2M 1M2</p>
+                <p>255 boul. Cremazie E.<br/>Montreal, QC, H2M 1M2</p>
                 <p>Metro Cremazie</p>
             </div>
             <div>

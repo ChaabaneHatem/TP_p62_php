@@ -293,8 +293,33 @@ footer a:hover{
     background-color: rgb(248, 249, 249);
 }
 
-<<<<<<< HEAD
-/*fin page catalogue*/
-=======
-/*fin style menu nav*/
->>>>>>> c31facc95fdc1d9b042a337872d67b2b7cf2ed5b
+            /*fin page catalogue*/
+
+/*debut page panier*/
+div.conteneur_item_panier {
+    display: flex;
+    flex: 1;
+}
+div.conteneur_item_panier img {
+    width: 20%;
+    height: 20%;
+}
+
+div.conteneur_item_panier > :nth-child(2) {
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 80px;
+    width: 155px;
+    letter-spacing: 1px;
+    color: #ab5151;
+}
+div.conteneur_item_panier > :nth-child(3) {
+    margin-top: 60px;
+}
+div.conteneur_item_panier :nth-child(4) {
+}
+div.conteneur_item_panier :nth-child(5) {
+
+}
+
+/*fin page panier*/
