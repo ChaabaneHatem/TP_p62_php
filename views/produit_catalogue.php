@@ -1,6 +1,7 @@
 <?php
 require_once 'data/data.php';
 require_once 'function/markup_produit_catalogue.php';
+require_once "function/filtrage_produit.php";
 
 foreach ($produits as $id => $info) {
     $name        =& $info["nom"];
@@ -11,46 +12,12 @@ foreach ($produits as $id => $info) {
     $matiere     =& $info["matiere"];
     if (array_key_exists("filtre_cat_mat", $_POST)) {
         if (count($_POST) == 1) {
-            echo "<h2>Vous avez rien selectionner , Reselectinner une autre fois</h2>";
+            echo "<h2>Vous avez rien selectionner , Reselectinner une autre fois <br>
+                  <strong><a href='catalogue.php'>Ou voir toutes les catégories</a></strong>
+                  </h2>";
             break;
         }
-        if (array_key_exists("engagement", $_POST) && $catalogue == "engagement") {
-
-            if (array_key_exists("diamant", $_POST) && $matiere == "diamant") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-            if (array_key_exists("white", $_POST) && $matiere == "white") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-            if (array_key_exists("yellow", $_POST) && $matiere == "yellow") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-
-        }
-        if (array_key_exists("men", $_POST) && $catalogue == "men") {
-
-            if (array_key_exists("diamant", $_POST) && $matiere == "diamant") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-            if (array_key_exists("white", $_POST) && $matiere == "white") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-            if (array_key_exists("yellow", $_POST) && $matiere == "yellow") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-        }
-        if (array_key_exists("women", $_POST) && $catalogue == "women") {
-
-            if (array_key_exists("diamant", $_POST) && $matiere == "diamant") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-            if (array_key_exists("white", $_POST) && $matiere == "white") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-            if (array_key_exists("yellow", $_POST) && $matiere == "yellow") {
-                generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-            }
-        }
+        filtrage_des_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
     }
     else {
         generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
