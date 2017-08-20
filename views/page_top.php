@@ -31,7 +31,7 @@ require_once "function/update_panier.php";
                     ?></span>
                 <a href="panier.php"><img src="images/Logo-Panier.png" alt="logo panier"></a>
                 <div>
-                    <span>achat : </span>
+                    <span>Total Achats : <?php if(array_key_exists('somme_achat', $_SESSION)) { echo $_SESSION["somme_achat"]; } ?>$</span>
                 </div>
             </div>
         </div>

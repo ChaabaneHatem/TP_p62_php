@@ -9,9 +9,7 @@ foreach ($produits as $id => $info) {
     $prix        =& $info["prix"];
     $catalogue   =& $info["categorie"];
     $matiere     =& $info["matiere"];
-    if ($catalogue == "women") {
-        generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
-    }
+    generer_un_item($id, $name, $description, $image, $prix, $catalogue, $matiere);
 
 }
 
