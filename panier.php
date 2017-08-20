@@ -11,7 +11,7 @@ require_once "data/data.php";
         var_dump($panier);
         var_dump($_SESSION);
         if (count($panier) == 0) {
-            echo "<h2>Votre panier est vide</h2>";
+            echo "<h2>Votre panier est vide ...</h2>";
         }
         /*calcul_some_achat();*/
         $somme_achats = 0;
@@ -27,7 +27,7 @@ require_once "data/data.php";
         }
         $_SESSION["somme_achat"] = $somme_achats;
         ?>
-        <buttom><a href="catalogue.php">Contenue shopping</a></buttom>
+        <buttom><a href="catalogue.php">Continuer shopping</a></buttom>
         <?php
         if (count($panier) != 0) {?>
         <buttom><a href="caisse.php">Passez à la caisse</a></buttom>

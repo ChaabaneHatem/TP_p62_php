@@ -2,12 +2,13 @@
 ?>
 <footer>
     <div>
-    <div class="footer-menu">
+    <div class="footer-menu nav_lien_site">
         <ul>
             <li><h2>lien du site</h2></li>
-            <li><a href="index.php">accueil</a></li>
+            <li><a href="index.php">Accueil</a></li>
             <li><a href="catalogue.php">Bijoux</a></li>
-            <li><a href="contact.php">contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="index.php"><img src="images/logo-bijouterie-montreal.png" alt="logo_bijouterie_MTL"></a></li>
         </ul>
     </div>
     <div class="footer-menu">
@@ -21,12 +22,21 @@
         <li>samedi-dimanche: 10h-17h</li>
     </ul>
     </div>
-    <div class="footer-menu">
+    <div class="footer-menu nav_social_media">
         <ul>
             <li><h2>Nous suivre</h2></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Pinterest</a></li>
+            <li>
+                <a href="#"> Facebook</a>
+            </li>
+            <li>
+                <a href="#"> Twitter</a>
+            </li>
+            <li>
+                <a href="#"> Instagram</a>
+            </li>
+            <li>
+                <a href="#"> Pinterest</a>
+            </li>
         </ul>
     </div>
     </div>

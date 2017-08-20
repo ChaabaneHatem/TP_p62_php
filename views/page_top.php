@@ -33,9 +33,9 @@ require_once "function/calcul_somme_total_achat.php";
                     }
                     ?></span>
                 <a href="panier.php"><img src="images/Logo-Panier.png" alt="logo panier"></a>
-                <div>
-                    <span>Total Achats : <?php if(array_key_exists('somme_achat', $_SESSION)) { echo $_SESSION["somme_achat"]; } ?>$</span>
-                </div>
+                <!--<div>
+                    <span>Total Achats : <?php /*if(array_key_exists('somme_achat', $_SESSION)) { echo $_SESSION["somme_achat"]; } */?>$</span>
+                </div>-->
             </div>
         </div>
         <div id="menu">
