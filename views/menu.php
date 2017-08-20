@@ -1,7 +1,7 @@
 <nav id="menu">
     <ul>
-        <li><a href="index.php">accueil</a></li>
+        <li><a href="index.php">Accueil</a></li>
         <li><a href="catalogue.php">Bijoux</a></li>
-        <li><a href="contact.php">contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
     </ul>
 </nav>
