@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if (! array_key_exists("panier", $_SESSION)) {
     $_SESSION["panier"] = array();
 }
@@ -33,6 +34,3 @@ if (array_key_exists("delete_item", $_POST)) {
     unset($panier[$_POST["id"]]);
 }
 
-
-
-?>
