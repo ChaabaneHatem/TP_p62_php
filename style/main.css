@@ -71,7 +71,28 @@ p,a{
 
 /*************PAGE CONTACT*************/
 #titre-contact {
-text-align: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+#info-contact div{
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+
+#info-contact{
+    margin: 0 auto;
+    border:1px dotted lightgrey;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#info-contact img{
+    height: 50px;
 }
 
 #formu{
@@ -111,7 +132,7 @@ text-align: center;
     width: 100px;
 }
 
-input[type="submit"]{
+#bouton-formu input[type="submit"]{
     background-color: rgba(9, 219, 219,0.2);
     height: 50px;
     line-height: 50px;
@@ -128,9 +149,20 @@ input#bouton-formu{
 }
 
 .error{
-    color:rgb(9, 219, 219)
-;
+    color:rgb(9, 219, 219);
 }
+
+#banner-form{
+    width: 100%;
+}
+
+#maps{
+    margin: 30px auto;
+    display: table;
+}
+
+/*******FIN FORMULAIRE*********/
+
 /* debut styler le menu nav */
 nav#menu {
     border-bottom: solid 1px grey;
