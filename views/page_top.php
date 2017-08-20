@@ -1,5 +1,8 @@
 <?php
 require_once "function/update_panier.php";
+require_once "function/calcul_somme_total_achat.php";
+
+/*calcul_some_achat();*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
