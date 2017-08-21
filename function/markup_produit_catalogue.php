@@ -4,7 +4,7 @@ function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $m
     ?>
     <div class="conteneur_item">
         <div class="img_item">
-            <img src="images/<?=$image?>" alt="<?=$name?>">
+            <a href="detail_produit.php?id_item=<?=$id?>"><img src="images/<?=$image?>" alt="<?=$name?>"></a>
         </div>
         <span><?=$name?></span>
         <div>
