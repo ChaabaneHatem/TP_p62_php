@@ -2,8 +2,7 @@
 require_once "views/page_top.php"
 ?>
     <main>
-<!--        <img id=banner src="images/banner-bague.jpeg" alt="bagues en diamants">
--->        <div class="categorie" id="bagues" >
+        <div class="categorie" id="bagues" >
             <img src="images/bague1.png" alt="bagues en diamants">
             <div class="text">
                 <h2><a href="#">NOS BAGUES EN DIAMANTS</a></h2>

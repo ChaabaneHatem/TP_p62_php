@@ -1,7 +1,6 @@
 <?php
 require_once "function/update_panier.php";
 require_once "function/calcul_somme_total_achat.php";
-
 /*calcul_some_achat();*/
 ?>
 <!DOCTYPE html>
@@ -18,8 +17,8 @@ require_once "function/calcul_somme_total_achat.php";
         <div id="info_supplimentaire">
             <a href="#"><img src="images/logo_maps.png" alt="maps"></a>
             <span>514-321-6522</span>
-            <div><form action="contact.php" method="post">
-                <input type="submit" value="Connexion">
+            <div><form action="seconnecter.php" method="post">
+                <input type="submit" value="Se connecter">
             </form>
             <img src="images/drapeau_canada.jpg" alt="drapeau canada">
             <span>FR, CAD</span></div>

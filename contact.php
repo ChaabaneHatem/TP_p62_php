@@ -1,5 +1,6 @@
 <?php
 require_once "views/page_top.php";
+require_once "data/select-data-form.php";
 
 const SELECTED_ATTR = 'selected="selected"';
 const CHECKED_ATTR = 'checked="checked"';
@@ -37,7 +38,13 @@ $validation = array(
         'err_msg' => 'Veuillez choisir une civilité',
         'is_valid' => false,
     ),
+    'select_bijoux' => array(
+        'is_valid' => false,
+        'err_msg' => 'Veuillez choisir au moins un bijoux.',
+        'val' => array(),
+    ),
 );
+
 
 $fnom =& $validation['saisie_nom'];
 if (array_key_exists('saisie_nom', $_POST)) {
@@ -87,10 +94,23 @@ if (array_key_exists('radio_sexe', $_POST)) {
     }
 }
 
-if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] && $fphone['is_valid'] && $fradio['is_valid']) {
+
+$fbijoux =& $validation['select_bijoux'];
+if (array_key_exists('select_bijoux', $_POST) && is_array($_POST['select_bijoux'])) {
+    foreach ($_POST['select_bijoux'] as $valeur) {
+        if (in_array($valeur, $liste_bijoux)) {
+            $fbijoux['val'][] = $valeur;
+        }
+    }
+    $fbijoux['is_valid'] = count($fbijoux['val']) >= 1;
+}
+
+if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] &&
+    $fphone['is_valid'] && $fradio['is_valid'] && $fbijoux['is_valid']) {
     require_once('confirmation-formulaire.php');
     exit;
 }
+
 
 ?>
 <main>
@@ -101,7 +121,7 @@ if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] && $fphone['
         <div id="info-contact">
             <div>
                 <img src="images/icone-adresse.gif" alt="icone d'adresse"/>
-                <p>255 boul. Cremaziw E.<br/>Montreal, QC, H2M 1M2</p>
+                <p>255 boul. Cremazie E.<br/>Montreal, QC, H2M 1M2</p>
                 <p>Metro Cremazie</p>
             </div>
             <div>
@@ -179,13 +199,16 @@ if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] && $fphone['
                 </li>
                 <li>
                     <label for="select_bijoux">Nos choix</label>
-                    <select name="select_bijoux" id="select_bijoux">
-                        <option value="-1">Choisissez</option>
-                        <option value="bague">Bague</option>
-                        <option value="Bracelet">Bracelet</option>
-                        <option value="collier">Collier</option>
-                        <option value="boucle">Boucle d'oreille</option>
+                    <select  multiple="multiple" name="select_bijoux[]" id="select_bijoux">
+                        <?php foreach($liste_bijoux as $bijoux) { ?>
+                            <option
+                                <?= in_array($bijoux, $fbijoux['val']) ? SELECTED_ATTR : '' ?>
+                                    value="<?= $bijoux ?>"><?= $bijoux ?></option>
+                        <?php } ?>
                     </select>
+                    <?php if ( ! $fbijoux['is_valid']) {
+                        echo '<p class="error">',  $fbijoux['err_msg'], '</p>';
+                    } ?>
                 </li>
                 <li>
                     <label for="message">Message</label>
