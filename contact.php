@@ -40,7 +40,7 @@ $validation = array(
     ),
     'select_bijoux' => array(
         'is_valid' => false,
-        'err_msg' => 'Veuillez choisir au moins deux bijoux.',
+        'err_msg' => 'Veuillez choisir au moins un bijoux.',
         'val' => array(),
     ),
 );

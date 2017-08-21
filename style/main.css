@@ -25,7 +25,7 @@ body{
     margin: 0;
 }
 main{
-    width: 95%;
+    width: 100%;
     margin:0 auto;
 }
 
@@ -319,6 +319,26 @@ div.conteneur_item_panier :nth-child(5) {
 }
 
 /*fin page panier*/
+
+/*Page confirmation email*/
+#confirmation a:hover{
+    color: rgb(0, 255, 157);
+}
+
+#confirmation p{
+    height: 100px;
+    margin-top: 50px;
+}
+
+#confirmation{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+#banner-confirm{
+    width: 100%;
+}
+
 
 
 /****FOOTER*****/
