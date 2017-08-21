@@ -149,11 +149,7 @@ $produits = array(
         "matiere"       =>  "yellow"
     ),
 //        fin base de données
-)
-
-
-
-
+);
 
 
 ?>
