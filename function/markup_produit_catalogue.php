@@ -4,7 +4,7 @@ function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $m
     ?>
     <div class="conteneur_item">
         <div class="img_item">
-            <img src="images/<?=$image?>" alt="<?=$name?>">
+            <a href="detail_produit.php?id_item=<?=$id?>"><img src="images/<?=$image?>" alt="<?=$name?>"></a>
         </div>
         <span><?=$name?></span>
         <div>
@@ -21,7 +21,6 @@ function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $m
         <span class="prix_item"> Prix : <?=$prix?>$</span>
         <form action="" method="post">
             <input type="hidden" name="id" value="<?=$id?>">
-<!--            <input type="text" value="1" name="qty">-->
             <select name="qty" id="quantite">
                 <option value="1">1</option>
                 <option value="2">2</option>
