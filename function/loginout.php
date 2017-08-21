@@ -1,7 +1,7 @@
 <?php
-
+require_once "update_panier.php";
 const P_SESS_USERNAME = 'P_SESS_USERNAME';
-
+/*var_dump($_SESSION);*/
 /*if ( session_status() === PHP_SESSION_NONE ) { // Regarde si la session a été démarré ou pas
     session_start();
 }*/
@@ -25,6 +25,19 @@ if (array_key_exists('login', $_POST)
 
 if (array_key_exists('logout', $_POST)) {
     unset($_SESSION[P_SESS_USERNAME]);
+
+    header('Location: ../index.php');
+    exit;
+
 }
 
+if (! user_is_logged()) {
+    header('Location: ../seconnecter.php');
+    exit;
+}
+if (user_is_logged()) {
+    header('Location: ../index.php');
+    exit;
+}
 
+?>

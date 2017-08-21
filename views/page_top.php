@@ -17,8 +17,16 @@ require_once "function/calcul_somme_total_achat.php";
         <div id="info_supplimentaire">
             <a href="#"><img src="images/logo_maps.png" alt="maps"></a>
             <span>514-321-6522</span>
-            <div><form action="seconnecter.php" method="post">
-                <input type="submit" value="Se connecter">
+            <?php if (array_key_exists('P_SESS_USERNAME', $_SESSION)) {
+                echo "<span class='msg_bienvenue'>Boujour Mr. ",$_SESSION['P_SESS_USERNAME'],"</span>";
+            }?>
+            <div><form action="function/loginout.php" method="post">
+                <?php if ( ! array_key_exists('P_SESS_USERNAME', $_SESSION)) {
+                    echo "<input type='submit' value='Se connecter'>";
+                } else if (array_key_exists('P_SESS_USERNAME', $_SESSION)) {
+                    echo "<input type='submit' name='logout' value='Deconnexion'>";
+                }?>
+
             </form>
             <img src="images/drapeau_canada.jpg" alt="drapeau canada">
             <span>FR, CAD</span></div>
