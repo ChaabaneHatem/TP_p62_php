@@ -32,7 +32,7 @@ require_once "function/calcul_somme_total_achat.php";
             <span>FR, CAD</span></div>
         </div>
         <div id="logo_panier">
-            <img src="images/logo-bijouterie-montreal.png" alt="logo_bijouterie_MTL">
+            <a href="index.php"><img src="images/logo-bijouterie-montreal.png" alt="logo_bijouterie_MTL"></a>
             <div id="panier">
                 <span><?php
                     if (array_key_exists("panier", $_SESSION)) {
