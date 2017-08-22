@@ -18,7 +18,7 @@ require_once "function/calcul_somme_total_achat.php";
             <a href="#"><img src="images/logo_maps.png" alt="maps"></a>
             <span>(514) 234-4567</span>
             <?php if (array_key_exists('P_SESS_USERNAME', $_SESSION)) {
-                echo "<span class='msg_bienvenue'>Boujour Mr. ",$_SESSION['P_SESS_USERNAME']['username'],"</span>";
+                echo "<span class='msg_bienvenue'> Boujour Mr. <strong>",$_SESSION['P_SESS_USERNAME']['username'],"</strong></span>";
             }?>
             <div><form action="function/loginout.php" method="post">
                 <?php if ( ! array_key_exists('P_SESS_USERNAME', $_SESSION)) {

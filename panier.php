@@ -7,10 +7,10 @@ require_once "data/data.php";
 ?>
     <main>
         <?php
-        var_dump($_POST);
+        /*var_dump($_POST);
         var_dump($panier);
         var_dump($_SESSION);
-        var_dump($_COOKIE);
+        var_dump($_COOKIE);*/
         if (count($panier) == 0) {
             echo "<h2>Votre panier est vide ...</h2>";
         }
