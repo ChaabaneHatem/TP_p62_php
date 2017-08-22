@@ -28,11 +28,14 @@ require_once "data/data.php";
         }
         $_SESSION["somme_achat"] = $somme_achats;
         ?>
-        <buttom><a href="catalogue.php">Continuer shopping</a></buttom>
+        <?php
+        if (count($panier) != 0) { ?>
+        <div class="total_achats_panier">Total du panier : <?= $somme_achats; ?>$</div>
+        <?php } ?>
+        <buttom class="btn_1"><a href="catalogue.php">Continuer shopping</a></buttom>
         <?php
         if (count($panier) != 0) {?>
-        <buttom><a href="caisse.php">Passez à la caisse</a></buttom>
-        <span>Total du panier : <?= $somme_achats; ?>$</span>
+        <buttom class="btn_2"><a href="caisse.php">Passez à la caisse</a></buttom>
         <?php } ?>
     </main>
 <?php

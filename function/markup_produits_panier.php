@@ -3,14 +3,14 @@
 function generer_un_item_pour_panier($id, $name, $description, $image, $prix, $qty) {
     ?>
     <div class="conteneur_item_panier">
-
-            <img src="images/<?=$image?>" alt="<?=$name?>">
-
+        <div class="img_item">
+        <a href="detail_produit.php?id_item=<?=$id?>"><img src="images/<?=$image?>" alt="<?=$name?>"></a>
+        </div>
         <span><?=$name?></span>
         <div>
             <p><?=$description?></p>
         </div>
-        <span class="prix_item"> Prix : <?=$prix?>$</span>
+        <span class="prix_item_panier"> Prix : <?=$prix?>$</span>
         <form action="" method="post">
             <input type="hidden" name="id" value="<?=$id?>">
             <input type="submit" value="-" name="delete_one">
