@@ -34,3 +34,9 @@ if (array_key_exists("delete_item", $_POST)) {
     unset($panier[$_POST["id"]]);
 }
 
+if (array_key_exists('P_SESS_USERNAME', $_SESSION)) {
+    if (array_key_exists('panier_user_stocke', $_SESSION['P_SESS_USERNAME'])) {
+        $panier = $_SESSION['P_SESS_USERNAME']['panier_user_stocke'];
+        unset($_SESSION['P_SESS_USERNAME']['panier_user_stocke']);
+    }
+}
