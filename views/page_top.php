@@ -9,6 +9,7 @@ require_once "function/calcul_somme_total_achat.php";
   <meta charset="UTF-8">
   <title>accueil</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>

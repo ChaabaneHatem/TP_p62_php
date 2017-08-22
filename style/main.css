@@ -538,15 +538,15 @@ footer a:hover{
     background-color: rgb(248, 249, 249);
 }
 .nav_social_media li:nth-of-type(2) a:before {
-    content: "\f230 ";
-    font-family: FontAwesome;
+    content: "\f230";
+    font-family: fontawesomeregular;
     color: #364c52;
     font-size: 35px;
     vertical-align: top;
 }
 
 .nav_social_media li:nth-of-type(3) a:before {
-    content: "\f081 ";
+    content: "\f081";
     font-family: FontAwesome;
     color: #364c52;
     font-size: 35px;
@@ -554,7 +554,7 @@ footer a:hover{
 }
 
 .nav_social_media li:nth-of-type(4) a:before {
-    content: "\f16d ";
+    content: "\f16d";
     font-family: FontAwesome;
     color: #364c52;
     font-size: 35px;
@@ -562,7 +562,7 @@ footer a:hover{
 }
 
 .nav_social_media li:last-of-type a:before {
-    content: "\f0d2 ";
+    content: "\f0d2";
     font-family: FontAwesome;
     color: #364c52;
     font-size: 35px;
