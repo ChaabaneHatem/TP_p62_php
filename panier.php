@@ -10,6 +10,7 @@ require_once "data/data.php";
         var_dump($_POST);
         var_dump($panier);
         var_dump($_SESSION);
+        var_dump($_COOKIE);
         if (count($panier) == 0) {
             echo "<h2>Votre panier est vide ...</h2>";
         }

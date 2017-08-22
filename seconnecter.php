@@ -1,7 +1,7 @@
 <?php
 
 require_once 'views/page_top.php';
-
+var_dump($_SESSION);
 ?>
 
 <h2>Veuillez vous connecter dans votre compte</h2>
