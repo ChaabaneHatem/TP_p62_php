@@ -364,6 +364,11 @@ select#quantite{
     text-align: center;
     font-size: 35px;
 }
+
+#filtre_item input[type='checkbox']{
+    transform: scale(1.5);
+}
+
 /*fin page catalogue*/
 
 
