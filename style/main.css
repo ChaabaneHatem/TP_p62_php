@@ -80,7 +80,7 @@ p,a{
 }
 
 .lien:hover{
-    background-color: rgba(9, 219, 219,0.2);
+    background-color: lightcyan;
 }
 
 /*************PAGE CONTACT*************/
@@ -146,14 +146,14 @@ p,a{
     width: 100px;
 }
 
-#bouton-formu input[type="submit"]{
-    background-color: rgba(9, 219, 219,0.2);
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    margin-right: 150px;
-    border:1px solid lightgrey;
-    color: darkgrey;
+input#bouton-formu{
+    background-color:rgb(244,246,246);
+    border:1px solid darkslategrey;
+    color: lightslategrey;
+}
+
+input#bouton-formu:hover{
+    background-color: lightcyan;
 }
 
 input#bouton-formu{
@@ -173,6 +173,12 @@ input#bouton-formu{
 #maps{
     margin: 30px auto;
     display: table;
+}
+
+select#select_bijoux{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: lightslategrey;
 }
 
 /*******FIN FORMULAIRE*********/
@@ -203,6 +209,7 @@ nav#menu {
     color: #978b8b;
 }
 
+
 div#logo_panier {
     text-align: center;
     border-top: dotted 1px grey;
@@ -212,21 +219,22 @@ div#logo_panier img {
     display: inline;
     width: 25%;
     margin: 10px 0;
+    margin-right: -22px;
 }
 div#logo_panier #panier {
     display: inline;
 }
 div#logo_panier #panier img {
-    width: 4%;
+    width: 2.5%;
 }
 div#logo_panier #panier > span {
     position: absolute;
-    font-size: 2em;
-    top: 28px;
-    width: 38px;
+    font-size: 23px;
+    top: 58px;
+    width: 29px;
     background-color: rgba(0, 255, 157, 0.27);
-    height: 35px;
-    right: 480px;
+    height: 25px;
+    right: 493px;
     border-radius: 15px;
     font-weight: bold;
     color: rgb(255, 108, 0);
@@ -239,30 +247,41 @@ div#info_supplimentaire {
 }
 
 div#info_supplimentaire a img {
-    width: 1.4%;
+    width: 2.4%;
+    margin-top: 5px;
+    margin-left: 16px;
 }
-div#info_supplimentaire img {
+#drapeau {
     width: 3%;
     margin: 0 25px;
 }
+
+div#info_supplimentaire span{
+    font-size: 20px;
+    color: darkslategray;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 div#info_supplimentaire form {
     display: inline;
 }
 div#info_supplimentaire div {
     position: relative;
     left: 80%;
-    top: -21px;
+    top: -47px;
 }
 
 div#info_supplimentaire form input{
     height: 30px;
-    background-color: lightcyan;
+    background-color: rgb(244,246,246);
     border: 1px solid grey;
     color: grey;
+    border-radius: 25px;
+    width: 140px;
 }
 
 div#info_supplimentaire form input:hover{
-    background-color: rgb(244, 246, 246);
+    background-color:lightcyan;
 }
 
 #menu a:hover{
@@ -339,7 +358,44 @@ div.conteneur_item_panier :nth-child(5) {
     width: 100%;
 }
 
+/*******Page se connecter*********/
+#titre-connection{
+    text-align: center;
+    font-size: 35px;
+}
 
+#contenu-connect{
+    margin-top:130px;
+}
+
+#form-login{
+    margin:0 auto;
+    display: table;
+}
+
+#form-login label{
+    width: 130px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#form-login li{
+    margin:30px;
+}
+
+#form-login input[type='submit']{
+    background-color: rgb(244,246,246);
+    border:1px solid darkslategrey;
+    color: lightslategrey;
+    height: 35px;
+    width: 150px;
+    margin:70px auto;
+    display: block;
+}
+
+#form-login input[type='submit']:hover{
+    background-color: lightcyan;
+}
 
 /****FOOTER*****/
 .footer-menu{
