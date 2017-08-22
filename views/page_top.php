@@ -16,7 +16,7 @@ require_once "function/calcul_somme_total_achat.php";
     <header>
         <div id="info_supplimentaire">
             <a href="#"><img src="images/logo_maps.png" alt="maps"></a>
-            <span>514-321-6522</span>
+            <span>(514) 234-4567</span>
             <?php if (array_key_exists('P_SESS_USERNAME', $_SESSION)) {
                 echo "<span class='msg_bienvenue'>Boujour Mr. ",$_SESSION['P_SESS_USERNAME']['username'],"</span>";
             }?>
@@ -26,13 +26,12 @@ require_once "function/calcul_somme_total_achat.php";
                 } else if (array_key_exists('P_SESS_USERNAME', $_SESSION)) {
                     echo "<input type='submit' name='logout' value='Deconnexion'>";
                 }?>
-
             </form>
-            <img src="images/drapeau_canada.jpg" alt="drapeau canada">
-            <span>FR, CAD</span></div>
+            <img id="drapeau" src="images/drapeau_canada.jpg" alt="drapeau canada">
+            </div>
         </div>
         <div id="logo_panier">
-            <img src="images/logo-bijouterie-montreal.png" alt="logo_bijouterie_MTL">
+            <a href="index.php"><img src="images/logo-bijouterie-montreal.png" alt="logo_bijouterie_MTL"></a>
             <div id="panier">
                 <span><?php
                     if (array_key_exists("panier", $_SESSION)) {

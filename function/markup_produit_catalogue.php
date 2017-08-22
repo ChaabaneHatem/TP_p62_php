@@ -11,12 +11,10 @@ function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $m
             <p><?=$description?></p>
         </div>
         <div>
-            <span>Categorie : </span>
-            <p><?=$catalogue?></p>
+            <p><strong>Categorie : </strong><?=$catalogue?></p>
         </div>
         <div>
-            <span>matiere : </span>
-            <p><?=$matiere?></p>
+            <p><strong>Matiere : </strong><?=$matiere?></p>
         </div>
         <span class="prix_item"> Prix : <?=$prix?>$</span>
         <form action="" method="post">
