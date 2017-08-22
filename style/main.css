@@ -306,6 +306,64 @@ div.conteneur_item .img_item img {
     display: inline-block;
     width: 30%;
 }
+
+#filtre_item form{
+    display: table;
+    margin: 55px auto;
+}
+
+#filtre_item input[type='submit']{
+    margin: 20px auto;
+    display: block;
+    background-color: rgb(244,246,246);
+    border:1px solid darkslategrey;
+    color: lightslategrey;
+    height: 45px;
+    width: 200px;
+    font-size: 16px;
+}
+
+#filtre_item input[type='submit']:hover{
+    background-color: lightcyan;
+}
+
+#filtre_item label{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin:10px;
+}
+
+.conteneur_item span,strong{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    color: darkslategrey;
+    font-weight:bold;
+}
+
+div.conteneur_item form input[type='submit']{
+    margin: 20px auto;
+    display: block;
+    background-color: rgb(244,246,246);
+    border:1px solid darkslategrey;
+    color: lightslategrey;
+    height: 45px;
+    width: 200px;
+    font-size: 16px;
+}
+
+div.conteneur_item form input[type='submit']:hover{
+    background-color: lightcyan;
+}
+
+select#quantite{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+#titre-catalogue{
+    text-align: center;
+    font-size: 35px;
+}
 /*fin page catalogue*/
 
 

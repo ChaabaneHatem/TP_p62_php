@@ -3,13 +3,14 @@ require_once "views/page_top.php";
 require_once "function/update_panier.php";
 ?>
 <main>
+    <h2 id="titre-catalogue">NOTRE CATALOGUE</h2>
     <?php
     require_once "views/filtre_item.php";
     ?>
     <div id="coneteneur_global">
         <?php
-        var_dump($_POST);
-        var_dump($panier);
+/*        var_dump($_POST);
+        var_dump($panier);*/
         require_once "views/produit_catalogue.php";
         ?>
     </div>
