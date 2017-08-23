@@ -45,7 +45,7 @@ require_once "function/update_panier.php";
                 </div>-->
             </div>
         </div>
-        <div id="menu">
+        <div id="menu_1">
             <?php
             require_once "menu.php"
             ?>

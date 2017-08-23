@@ -19,7 +19,7 @@ function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $m
         <span class="prix_item"> Prix : <?=$prix?>$</span>
         <form action="" method="post">
             <input type="hidden" name="id" value="<?=$id?>">
-            <select name="qty" id="quantite">
+            <select name="qty" class="quantite">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
