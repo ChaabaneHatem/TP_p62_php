@@ -1,5 +1,5 @@
 <div id="filtre_item">
-    <form action="" method="post" name="filtre_categorie" >
+    <form method="post" name="filtre_categorie" >
         <div><input type="checkbox" name="engagement" id="engagement">
         <label for="engagement">Engagement</label>
         <input type="checkbox" name="men" id="men">

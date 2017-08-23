@@ -11,7 +11,7 @@ function generer_un_item_pour_panier($id, $name, $description, $image, $prix, $q
             <p><?=$description?></p>
         </div>
         <span class="prix_item_panier"> Prix : <?=$prix?>$</span>
-        <form action="" method="post">
+        <form method="post">
             <input type="hidden" name="id" value="<?=$id?>">
             <input type="submit" value="-" name="delete_one">
             <input type="text" value="<?=$qty?>" name="qty">

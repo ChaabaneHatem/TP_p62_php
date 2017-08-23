@@ -17,7 +17,7 @@ function generer_un_item($id, $name, $description, $image, $prix, $catalogue, $m
             <p><strong>Matiere : </strong><?=$matiere?></p>
         </div>
         <span class="prix_item"> Prix : <?=$prix?>$</span>
-        <form action="" method="post">
+        <form method="post">
             <input type="hidden" name="id" value="<?=$id?>">
             <select name="qty" class="quantite">
                 <option value="1">1</option>

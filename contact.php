@@ -142,7 +142,7 @@ if ($fnom['is_valid'] && $fprenom['is_valid'] && $email['is_valid'] &&
     </section>
     <div id="formu">
         <h2 id="titre-contact">Contactez-nous</h2>
-        <form id="formulaire" action="" method="post">
+        <form id="formulaire"  method="post">
             <ul>
                 <div id="section-radio">
                 <?php foreach($liste_sexe as $radio) {?>
