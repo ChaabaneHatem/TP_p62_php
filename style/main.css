@@ -252,7 +252,7 @@ div#info_supplimentaire a img {
     margin-left: 16px;
 }
 #drapeau {
-    width: 3%;
+    width: 16%;
     position: relative;
     top: 11px;
     margin: 0 25px;
@@ -268,9 +268,10 @@ div#info_supplimentaire form {
     display: inline;
 }
 div#info_supplimentaire div {
+    width: 250px;
     position: relative;
-    left: 80%;
-    top: -47px;
+    left: 79%;
+    top: -43px;
 }
 
 div#info_supplimentaire form input{
