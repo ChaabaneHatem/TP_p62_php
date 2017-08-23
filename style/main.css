@@ -587,6 +587,11 @@ footer a:hover{
 .nav_lien_site li:last-of-type img:hover {
     border: double 4px grey;
 }
+
+#producteur {
+    color: lightslategrey;
+    font-size: 2em;
+}
 /*fin footer*/
 
 /*debut page details*/
@@ -658,6 +663,5 @@ div#conteneur_item_description > div:nth-of-type(2) form select {
     font-weight: bold;
     border: solid 2px grey;
 }
-
 
 /*fin page details*/

@@ -40,6 +40,7 @@
         </ul>
     </div>
     </div>
+    <div><p id="producteur">/Site produit par Hatem Chaabane et Tania El-Asmar/</p></div>
 </footer>
 </div>
 </body>
