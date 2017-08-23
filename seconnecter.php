@@ -1,7 +1,7 @@
 <?php
 
 require_once 'views/page_top.php';
-/*var_dump($_SESSION);*/
+
 ?>
 
 <img src="images/dandelion-seeds-number-of-lion-screen-pilot-159056.jpeg" alt="">

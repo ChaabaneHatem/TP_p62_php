@@ -3,14 +3,15 @@
 function authenticate($username, $password) {
     $users = array(
         'Hatem' => array (
-            'psd' => 'a', //bonjour
+            'psd' => 'a', //a
             'panier_user1' => array(
                 'ED2' =>  '3',
                 'ED1' =>  '2',
                 'EW1' =>  '1'
             ),
         ),
-        'Tania' => 'bye', //bye
+        'Tania' => array (
+            'psd' => 'bye') //bye
     );
     $tab = $users[$username]['panier_user1'];
     $result = array_key_exists($username, $users) && ($password === $users[$username]['psd']);

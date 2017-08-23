@@ -26,10 +26,10 @@
         <ul>
             <li><h2>Nous suivre</h2></li>
             <li>
-                <a href="#"> Facebook</a>
+                <a href="https://www.facebook.com/"> Facebook</a>
             </li>
             <li>
-                <a href="#"> Twitter</a>
+                <a href="https://twitter.com/login?lang=fr"> Twitter</a>
             </li>
             <li>
                 <a href="#"> Instagram</a>

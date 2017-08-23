@@ -12,7 +12,7 @@ foreach ($produits as $id => $info) {
     $matiere     =& $info["matiere"];
     if (array_key_exists("filtre_cat_mat", $_POST)) {
         if (count($_POST) == 1) {
-            echo "<h2>Vous avez rien selectionner , Reselectinner une autre fois <br>
+            echo "<h2>Vous avez rien selectionner , Reselectionner une autre fois <br>
                   <strong><a href='catalogue.php'>Ou voir toutes les catégories</a></strong>
                   </h2>";
             break;
